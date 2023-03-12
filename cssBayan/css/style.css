@@ -1,14 +1,33 @@
 .memes {
 	max-width: 70%;
 	margin: 0rem auto;
+	cursor: pointer;
+}
+
+.memes:hover .meme__icon {
+	opacity: 1;
 }
 
 .meme {
 	display: block;
+	padding-bottom: 1rem;
+	cursor: pointer;
+}
+
+.meme:hover .meme__img {
+	transform: scale(1);
+	opacity: 1;
+	height: auto;
 }
 
 .meme__radio {
-	display: none;
+	appearance: none;
+}
+
+.meme__radio:checked~.meme__img {
+	transform: scale(1);
+	opacity: 1;
+	height: auto;
 }
 
 .meme__header {
@@ -19,8 +38,22 @@
 	padding-top: 1rem;
 }
 
-.meme__title {}
+.meme__title {
+	font-weight: bold;
+	font-size: 1.2rem;
+}
 
-.meme__icon {}
+.meme__icon {
+	opacity: 0.00;
+	transition-duration: 300ms;
+}
 
-.meme__img {}
+.meme__img {
+	width: 60%;
+	display: block;
+	margin: 0rem auto;
+	transform: scale(0.5);
+	height: 0.1rem;
+	opacity: 0.00;
+	transition-duration: 300ms;
+}
