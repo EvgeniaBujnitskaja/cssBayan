@@ -1,5 +1,5 @@
 body {
-background-color: rgb(240, 224, 252);
+	background-color: rgb(240, 224, 252);
 }
 
 .memes {
@@ -7,20 +7,10 @@ background-color: rgb(240, 224, 252);
 	margin: 0rem auto;
 }
 
-.memes:hover .meme__icon {
-	opacity: 1;
-}
-
 .meme {
 	display: block;
 	padding-bottom: 1rem;
 	cursor: pointer;
-}
-
-.meme:hover .meme__img {
-	transform: scale(1);
-	opacity: 1;
-	height: auto;
 }
 
 .meme__radio {
@@ -43,7 +33,6 @@ background-color: rgb(240, 224, 252);
 
 .meme__title {
 	font-weight: bold;
-	font-size: 1.2rem;
 }
 
 .meme__icon {
@@ -52,7 +41,8 @@ background-color: rgb(240, 224, 252);
 }
 
 .meme__radio:checked~.meme__header .meme__icon {
-	transform: rotate(45deg)
+	transform: scale(1);
+	transform: rotate(90deg);
 }
 
 .meme__img {
@@ -63,4 +53,34 @@ background-color: rgb(240, 224, 252);
 	height: 0.1rem;
 	opacity: 0.00;
 	transition-duration: 300ms;
+}
+
+@media (max-width: 320px) {
+	.meme__title {
+		font-size: 100%;
+	}
+}
+
+@media (min-width: 820px) and (max-width: 1920px) {
+	.meme__title {
+		font-size: 140%;
+	}
+}
+
+@media (min-width: 1920px) {
+	.meme__title {
+		font-size: 180%;
+	}
+}
+
+@media (hover: hover) {
+	.memes:hover .meme__icon {
+		opacity: 1;
+	}
+
+	.meme:hover .meme__img {
+		transform: scale(1);
+		opacity: 1;
+		height: auto;
+	}
 }
