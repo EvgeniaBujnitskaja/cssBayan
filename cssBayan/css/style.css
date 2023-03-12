@@ -1,0 +1,26 @@
+.memes {
+	max-width: 70%;
+	margin: 0rem auto;
+}
+
+.meme {
+	display: block;
+}
+
+.meme__radio {
+	display: none;
+}
+
+.meme__header {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 1rem;
+	border-top: 0.1rem solid #000;
+	padding-top: 1rem;
+}
+
+.meme__title {}
+
+.meme__icon {}
+
+.meme__img {}
