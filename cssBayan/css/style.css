@@ -59,17 +59,29 @@ body {
 	.meme__title {
 		font-size: 100%;
 	}
+
+	h1 {
+		font-size: 2rem;
+	}
 }
 
 @media (min-width: 820px) and (max-width: 1920px) {
 	.meme__title {
 		font-size: 140%;
 	}
+
+	h1 {
+		font-size: 3rem;
+	}
 }
 
 @media (min-width: 1920px) {
 	.meme__title {
 		font-size: 180%;
+	}
+
+	h1 {
+		font-size: 4rem;
 	}
 }
 
