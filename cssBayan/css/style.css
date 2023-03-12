@@ -1,7 +1,10 @@
+body {
+background-color: rgb(240, 224, 252);
+}
+
 .memes {
 	max-width: 70%;
 	margin: 0rem auto;
-	cursor: pointer;
 }
 
 .memes:hover .meme__icon {
@@ -46,6 +49,10 @@
 .meme__icon {
 	opacity: 0.00;
 	transition-duration: 300ms;
+}
+
+.meme__radio:checked~.meme__header .meme__icon {
+	transform: rotate(45deg)
 }
 
 .meme__img {
